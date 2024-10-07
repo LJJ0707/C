@@ -1,6 +1,6 @@
-#include "print.h"
+#include "print.h" //函数的声明，，这是告诉编译器，由于后面会用到一个printHello函数，等等你帮我找到它并且去实现它
 
-int main(void){
-	printHello();
-	return 0;
+int main(void){  //main是一个函数的名字，这里不是主入口，void表示不接受参数的函数
+	printHello();//这里是指在调用这个函数，调用的函数的具体的内容这里没有表示，未知
+	return 0; //整个程序结束，没有出错返回一个0
 }
