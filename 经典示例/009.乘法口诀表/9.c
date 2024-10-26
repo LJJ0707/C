@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
-void main(void)
+void main(void) 
 {
 	int i,j,x,y;
 	clrscr();
@@ -11,7 +11,7 @@ void main(void)
 	{
 		gotoxy(x,y);
 		printf("%2d ",i);
-		x+=3;
+		x+=3;//x=x+3;
 	}
 	x=7;
 	y=6;
