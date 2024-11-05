@@ -1,29 +1,29 @@
 #include <stdio.h>
-void main()
+void main()  //模拟ATM机
 {
 	char SelectKey,CreditMoney,DebitMoney;
-	while(1)
+	while(1) //无限循环
 	{
 		do{
-			clrscr();
+			clrscr();  //这个函数是为了让用户不需要按回车键
 			puts("=========================");
 			puts("|  Please select key:   |");
-			puts("|  1. Quary             |");
-			puts("|  2. Credit            |");
-			puts("|  3. Debit             |");
-			puts("|  4. Return            |");
+			puts("|  1. Quary             |");//查询
+			puts("|  2. Credit            |");//存款
+			puts("|  3. Debit             |");//取款
+			puts("|  4. Return            |");//退出
 			puts("=========================");
 			SelectKey = getch();
 		}while( SelectKey!='1' && SelectKey!='2' && SelectKey!='3' && SelectKey!='4' );
-		switch(SelectKey)
+		switch(SelectKey)//switch可以用于表示多个if else
 		{
-			case '1':
+			case '1':  
 				clrscr();
 				puts("================================");
 				puts("|    Your balance is $1000.    |");
 				puts("|  Press any key to return...  |");
 				puts("================================");
-				getch();
+				getch();//这个函数用于从控制台读取一个字符不需要回车键
 				break;
 			case '2':
 				do{

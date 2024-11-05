@@ -3,7 +3,7 @@
 void main()
 {
 	int Password=0,Number=0,price=58,i=0;
-	clrscr();
+	clrscr();  
 	printf("\n====This is a Number Guess Game!====\n");
 	while( Password != 1234 )  //输入密码的循环
 	{
@@ -17,7 +17,7 @@ void main()
 	i=0;
 	while( Number!=price )
 	{
-		do{   //是为了便于玩家输入错误之后，重新输入    亮点       不管结果如何，代码都至少要执行一次
+		do{   //是为了便于玩家输入错误之后，重新输入    亮点       do while循环的特点，不管结果如何，代码都至少要执行一次
 			puts("Please input a number between 1 and 100: ");
 			scanf("%d",&Number);
 			printf("Your input number is %d\n",Number);
